@@ -13,8 +13,9 @@ while True:
     sinal = (current*4)/hall
     if hall >= 400:                                 #   Para fundos de escala mais altos, fazer espiras na sonda hall (A carga usada alcança apenas 12A)
         voltas = int(input("Número de voltas: "))   #   insira o n° de espiras para fundos de escala mais altos
-        sinal = sinal * 4
-    print("Sinal:", sinal)                         #   Compare este valor com o que foi lido no multímetro
+        sinal = sinal * voltas
+    print("Sinal:", sinal)                         #   Compare este valor com o que foi lido no multímetro (tensão AC)
     
     
+
 
